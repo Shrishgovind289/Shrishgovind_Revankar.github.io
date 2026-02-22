@@ -25,14 +25,20 @@
             background-image: url('wp5982404-electronic-components-wallpapers.jpg');
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
             background-attachment: fixed;
             overflow-x: hidden;
         }
 
         /* Responsive styles for smaller screens */
-        @media (max-width: 640px) {
-            .nav-link {
-                font-size: 0.875rem; /* text-sm */
+        @media (max-width: 768px) {
+            body {
+                background-size: cover;
+                background-position: center;
+            }
+        
+            .container {
+                padding: 10px;
             }
         }
     </style>
@@ -394,6 +400,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
