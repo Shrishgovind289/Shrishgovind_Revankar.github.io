@@ -19,28 +19,38 @@
     <!-- Theme color (some browsers use this) -->
     <meta name="theme-color" content="#0b0b0b">
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            color: #E2E8F0; /* Equivalent of text-gray-100 */
-            background-image: url(wp5982404-electronic-components-wallpapers.jpg);
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-            overflow-x: hidden;
-        }
+      html, body {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        font-family: 'Inter', sans-serif;
+        color: #E2E8F0;
+        overflow-x: hidden;
+        background: #0f172a; /* fallback so no white gaps */
+      }
 
-        /* Responsive styles for smaller screens */
-        @media (max-width: 640px) {
-            body {
-                background-size: cover;
-                background-position: center;
-            }
-        
-            .container {
-                padding: 10px;
-            }
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        background-image: url('wp5982404-electronic-components-wallpapers.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;   /* important */
+        background-color: #0f172a;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      @media (max-width: 640px) {
+        .container {
+          padding: 10px;
         }
-    </style>
+      }
+</style>
 <body>
     <!-- Header -->
     <header class="bg-gray-900/80 backdrop-blur-sm shadow-lg py-6 sticky top-0 z-50">
