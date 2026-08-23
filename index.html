@@ -205,14 +205,15 @@
                 <!-- TimeWise Smart Table Clock Project -->
                 <a href="https://github.com/Shrishgovind289/CYD_TimeWise" target="_blank" rel="noopener noreferrer"
                     class="block bg-gray-800/80 p-8 rounded-xl backdrop-blur-sm shadow-2xl transition-all duration-300 hover:bg-gray-700/80 hover:shadow-3xl">
-                    <h3 class="text-2xl font-semibold text-white mb-2">TimeWise – ESP32 Smart Table Clock</h3>
-                    <p class="text-gray-400 text-sm mb-4">July 2026</p>
+                    <h3 class="text-2xl font-semibold text-white mb-2">TimeWise – ESP32 Smart Table Clock & Network Music Player</h3>
+                    <p class="text-gray-400 text-sm mb-4">July – August 2026</p>
                     <p class="text-gray-300">
-                        Developed a multifunctional smart table clock and weather station using an ESP32-based Cheap Yellow Display and ESP-IDF. 
-                        I have developed 2 version of the same project, Arduino IDE (V1) and ESP-IDF (V2) versions. The V1 was limited with restrictions and complexity of using the graphics. 
-                        The system synchronizes time through NTP, retrieves live weather data, displays dynamic RGB565 weather backgrounds and icons from an SD card, and visualizes sunrise, sunset, moonrise, and moonset information. 
-                        Integrated an alarm system with WAV audio playback through the ESP32 DAC, automatic day/night display brightness control, and an LVGL-based graphical interface. 
-                        This project demonstrates embedded C development, peripheral integration, Wi-Fi communication, real-time scheduling, audio processing, SD-card file handling, and embedded GUI development.
+                        Developed TimeWise, an ESP32-based smart table clock that evolved from an Arduino-based time and weather display into a modular ESP-IDF embedded system.
+                        Rebuilt the application using ESP-IDF, FreeRTOS, and LVGL to support NTP time synchronization, Open-Meteo weather data, dynamic RGB565 weather backgrounds and icons loaded from an SD card, sunrise/sunset visualization, and an alarm system with WAV audio playback through the ESP32 DAC.
+                        Added an HTTP/WebSocket server with an SD-card-hosted web interface for real-time control of alarms, brightness, volume, and device state.
+                        Extended the system with a dedicated music mode that integrates with a self-hosted Navidrome server through the Subsonic API, streams and decodes MP3 audio in real time, displays song information, and automatically queues new tracks.
+                        Optimized memory usage by dynamically suspending LVGL and other services during music playback to free RAM for MP3 decoding.
+                        This project demonstrates embedded C development, FreeRTOS task management, network programming, HTTP/WebSocket communication, REST API integration, audio streaming and decoding, SD-card file systems, embedded GUI development, and resource-constrained system design.
                     </p>
                 </a>
                 <!-- Self-Balancing Robot Control Project -->
